@@ -1,0 +1,30 @@
+
+public class linkedList {
+
+	Node head;
+	
+	
+	public static void main(String[] args) {
+		/*
+		 * example to create linkedlist with 3 elements 
+		 */
+		linkedList ll = new linkedList();
+		Node e1 = new Node(1);
+		Node e2 = new Node(2);
+		Node e3 = new Node(3);
+		
+		ll.head = e1;
+		e1.next = e2;
+		e2.next = e3;
+		
+	}
+
+}
+class Node{
+	int data;
+	Node next;
+	
+	Node(int d){
+		data = d;
+	}
+}
