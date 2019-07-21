@@ -3,7 +3,7 @@ import java.util.TreeMap;
 import java.util.Vector;
 import java.util.Map.Entry;
 
-public class hashing1 {
+public class printVerticalOrderOfTree {
 	
 	static class Node{
 		int data;
