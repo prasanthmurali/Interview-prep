@@ -13,7 +13,6 @@ public class subArrays {
 		for(int[]subArray:subArrays) {		
 				System.out.println(Arrays.toString(subArray));
 		}
-
 	}
 	
 	public static ArrayList<int[]> getAllSubArrays(int[] arr) {
@@ -30,5 +29,4 @@ public class subArrays {
 		}	
 		return subArrays;
 	}
-
 }
