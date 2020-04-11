@@ -34,6 +34,34 @@ public class Tree {
 	}
 	
 	/*
+	 * Longest diameter of a binary tree
+	 */
+	public static int diameter(Node root) {
+		
+		if(root==null)
+			return 0;
+		
+		// Diameter of right sub tree
+		int a = diameter(root.left);
+		// Diameter of left sub tree
+		int b = diameter (root.right);
+		// Diameter through the root 
+		int c = 1 + height(root.left) + height(root.right);
+		
+		
+		return Math.max(Math.max(a, b), c);
+	}
+	
+	/*
+	 * Return height of a tree
+	 */
+	private static int height(Node node) {
+		if(node==null)
+			return 0;
+		return 1+Math.max(height(node.left), height(node.right));
+	}
+
+	/*
 	 * Min depth of binary tree
 	 */
 	public static int minDepth(Node root) {
